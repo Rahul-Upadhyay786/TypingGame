@@ -1,71 +1,63 @@
-.container {
-  width: 500px;
-  align-content: center;
+* {
+  box-sizing: border-box;
 }
-
-.grid {
-  height: 400px;
-  width: 400px;
+body {
   display: flex;
-  flex-wrap: wrap;
-  background-color: #dcd6bc;
-  margin-left: 50px;
-  margin-top: 20px;
-  border: 10px solid #dcd6bc;
-  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(175, 175, 201);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-div {
-  font-size: 25px;
-  text-align: center;
-  font-family: "Roboto Mono", monospace;
-}
-.valid {
-  height: 40px;
-  width: 40px;
-  border: 5px solid;
-  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
-  box-sizing: border-box;
+.container {
+  background-color: yellow;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 700px;
+  max-width: 90%;
+  border: 1px solid black;
 }
 
-.checked {
-  height: 40px;
-  width: 40px;
-  border: 2px solid;
-  background-color: #cecab7;
-  border-color: #9c998d;
-  box-sizing: border-box;
+.wpm,
+.wpmLabel {
+  color: rgb(175, 78, 88);
+  position: absolute;
+  top: 6rem;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-.bomb {
-  height: 40px;
-  width: 40px;
-  border: 5px solid;
-  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
-  box-sizing: border-box;
+.timer,
+.timerLabel {
+  position: absolute;
+  top: 2rem;
+  font-size: 3rem;
+  color: yellow;
+  font-weight: bold;
 }
 
-.one {
-  color: #e76346;
+.timerLabel,
+.wpmLabel {
+  left: 50rem;
 }
 
-.two {
-  color: #4199d3;
+.quote-display {
+  margin-bottom: 1rem;
+  margin-left: calc(1rem + 2px);
+  margin-left: calc(1rem - 2px);
 }
 
-.three {
-  color: #57da59;
+.container-focus {
+  border: 3px solid black;
 }
 
-.four {
-  color: #bb41d3;
+.quote-display .correct {
+  color: green;
 }
 
-#result {
-  margin-top: 5px;
-  color: #e76346;
+.incorrect {
+  color: red;
+  text-decoration: underline;
 }
-
-/* .bomb {
-  background-color: red;
-} */
